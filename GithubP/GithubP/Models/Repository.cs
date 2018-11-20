@@ -108,12 +108,13 @@ namespace GithubP.Models.Repository
         public int Open_issues { get; set; }
         public int Watchers { get; set; }
         public string Default_branch { get; set; }
-        public int Score { get; set; }
+        public float Score { get; set; }
     }
     public class RepositoryResult
     {
-        public int total_count { get; set; }
-        public bool incomplete_results { get; set; }
-        public List<Repository> repos { get; set; }
+        public int Total_count { get; set; }
+        public bool Incomplete_results { get; set; }
+        
+        public List<Repository> Items { get; set; }
     }
 }
