@@ -23,6 +23,7 @@ namespace GithubP.Helpers
             var result = await client.GetStringAsync(uri);
             var reposResult = JsonConvert.DeserializeObject<RepositoryResult>(result);
 
+            //I will take only fields i need before to pass data to view
             results = (from item in reposResult.Items
                        select new Repository()
                        {

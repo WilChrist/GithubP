@@ -1,0 +1,23 @@
+﻿.reposName {
+    font-size:large;
+    font-weight: 900;
+    color:black;
+}
+.reposDescription {
+    font-size: medium;
+}
+.reposOwnerName {
+    font-weight: bold;
+    font-size:15;
+    color: black;
+    vertical-align: middle;
+}
+
+.reposOwnerAvatar {
+    height: 25;
+    width: 25;
+}
+.reposStar {
+    height: 20;
+    width: 20;
+}
