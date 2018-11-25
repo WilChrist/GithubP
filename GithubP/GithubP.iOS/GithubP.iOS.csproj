@@ -164,9 +164,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\bstar.png" />
+    <ImageAsset Include="Resources\bstar.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\settings.png" />
+    <ImageAsset Include="Resources\settings.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
 </Project>
