@@ -20,11 +20,14 @@ namespace GithubP.Pages
             base.OnAppearing();
         }
 
+        /// <summary>
+        /// get list of repos and bind it to the view, asynchroniously
+        /// </summary>
         private async void LoadReposAsync()
         {
             reposListView.IsRefreshing = true;
 
-            var repos = await Helpers.RepositoryHelper.GetAsync("created");
+            var repos = await Helpers.RepositoryHelper.GetAsync("created:%3E2017-10-22&sort=stars&order=desc");
 
             this.BindingContext = repos;
             reposListView.ItemsSource = repos;

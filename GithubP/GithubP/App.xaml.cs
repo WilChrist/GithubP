@@ -9,9 +9,9 @@ namespace GithubP
         public App()
         {
             // Initialize Live Reload.
-#if DEBUG
+            #if DEBUG
             LiveReload.Init();
-#endif
+            #endif
 
             InitializeComponent();
 

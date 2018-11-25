@@ -11,11 +11,17 @@ namespace GithubP.Helpers
 {
     public static class RepositoryHelper
     {
+        /// <summary>
+        /// get repositories list from Github API, parse them and filter for removing the big part of unusefull data 
+        /// before passing it to view
+        /// </summary>
+        /// <param name="searchQuery"></param>
+        /// <returns>List of Repository</returns>
         public static async Task<List<Repository>> GetAsync(string searchQuery)
         {
             List<Repository> results = new List<Repository>();
 
-            string searchUrl = $"https://api.github.com/search/repositories?q={searchQuery}:%3E2017-10-22&sort=stars&order=desc";
+            string searchUrl = $"https://api.github.com/search/repositories?q={searchQuery}";
 
             var client = new HttpClient();
 
