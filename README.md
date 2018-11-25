@@ -53,4 +53,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 I just use [quicktype.io](quicktype.io) to parse Json data from API to obtain C# Class (Models) :D
 
 ## Screenshots
-
+![](https://github.com/WilChrist/GithubP/blob/master/Screenshots/Screenshot_1542748254.png)
+<img src="https://github.com/WilChrist/GithubP/blob/master/Screenshots/Screenshot_1542753720.png" alt="drawing" width="434"/>
+<img src="https://github.com/WilChrist/GithubP/blob/master/Screenshots/Screenshot_1542748168.png" alt="drawing" width="434"/>
